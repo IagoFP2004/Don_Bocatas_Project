@@ -72,19 +72,20 @@ h2{
 
 .content-carta{
     display: flex;
+    justify-content: space-between;
+    padding: 30px 340px ;
+
 }
 
-.carta{
-    display: flex;
-    flex-direction: row;
-    padding-left: 200px;
-    padding-top: 50px;
+
+
+.carta img{
+    width: 100%;
 }
 
 #texto{
    padding-top: 400px;
-   padding-left: 80px;
-
+   padding-right: 70px;
 }
 
 .content-carta #texto a{
@@ -93,7 +94,7 @@ h2{
 
 .boton-reservar{
     height: 70px;
-    width: 180px;
+    width: 190px;
     border: solid;
     margin: 50px auto;
     background-color: #00C8FF;
@@ -158,12 +159,21 @@ footer{
 }
 
 .caja1-footer{
-        
+    height: 50px;
+    width: 50px;
+    border:solid;
+}
+
+.caja2-footer{
+    height: 50px;
+    width: 50px;
+    border:solid;
 }
 
 @media (max-width: 768px) {
     header {
         position: relative;
+        width: 100%;
     }
 
 
@@ -172,24 +182,7 @@ footer{
         display: none;
     }
 
-
-    /* Sección "Carta" */
-    .content-carta {
-        flex-direction: column;
-        justify-content: baseline;
-       
-    }
-
-    .carta img {
-        width: 100%;
-    }
-
-    main section article .welcome video {
-        width: 100%;
-        height: 250px; /* Altura fija para móviles */
-    }
-    h2 {
-        text-align: center;
-        margin: 10px 0;
+    .content-carta{
+        border: solid;
     }
 }
