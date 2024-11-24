@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 10em;
+    background-color: #810C0C;
+}
+
+#logo{
+    position: relative;
+    max-height: 250px;
+    padding-bottom: 30px;
+}
+
+header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+header .menus{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+header .menus ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header .menus ul a{
+    display: flex;
+    position: relative;
+    padding: 20% 25px;
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+}
+
+
+main section article .welcome video{
+    width: 100%;
+    height: auto;
+}
+
+h2{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.content-carta{
+    display: flex;
+}
+
+.carta{
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+#texto{
+   padding-top: 400px;
+   padding-left: 80px;
+
+}
+
+.content-carta #texto a{
+    color: orange;
+}
+
+.boton-reservar{
+    height: 70px;
+    width: 180px;
+    border: solid;
+    margin: 50px auto;
+    background-color: #00C8FF;
+}
+
+#texto-boton{
+    padding: 20px;
+    padding-top: 25px;
+}
+
+#texto-boton:hover{
+    color: white;
+}
+
+.content-comentarios{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comentario{
+    height: 500px;
+    width: 300px;
+    border: solid;
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.imagen-coment{
+    height: 40%;
+}
+
+.imagen-coment img{
+    width: 100%;
+}
+
+#imagen1{
+    height: 250px;
+}
+
+#imagen3{
+    height: 250px;
+}
+
+.usuario{
+    font-size: xx-large;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+
+    /* Ocultar menús */
+    header .menus {
+        display: none;
+    }
+
+
+    /* Sección "Carta" */
+    .content-carta {
+        flex-direction: column;
+        justify-content: baseline;
+       
+    }
+
+    .carta img {
+        width: 100%;
+    }
+
+    main section article .welcome video {
+        width: 100%;
+        height: 250px; /* Altura fija para móviles */
+    }
+    h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
