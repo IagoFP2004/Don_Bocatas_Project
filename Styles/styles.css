@@ -1,3 +1,4 @@
+/*Estilos generales*/
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
+/*Estilos del index*/
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -70,40 +71,60 @@ h2{
     margin-left: 30px;
 }
 
-.content-carta{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 340px ;
-
-}
-
-.carta{
-    width: 90%;
-}
-
-.carta img{
+.content-carta {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    align-items: center;
 }
 
-#texto{
-   padding-top: 400px;
-   padding-right: 70px;
+.table-menu{
+    padding: 60px;
 }
 
-.content-carta #texto a{
-    color: orange;
+.table-menu table {
+    width: 100%; 
+    border: 2px solid black; 
+    border-collapse: collapse;
+    text-align: left; 
+}
+
+
+.table-menu th {
+    background-color: #810C0C; 
+    color: white;
+    border: 2px solid black; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+
+.table-menu td {
+    border: 2px solid black;
+    padding: 8px;                     
+}
+
+
+.table-menu tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.table-menu tr:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco en filas impares */
 }
 
 .boton-reservar{
     height: 70px;
     width: 190px;
     border: solid;
-    margin: 50px auto;
+    margin: 0px auto;
+    margin-bottom: 40px;
     background-color: #00C8FF;
 }
 
 #texto-boton{
-    padding: 20px;
+    text-align: center;
     padding-top: 25px;
 }
 
@@ -154,64 +175,70 @@ h2{
     text-align: center;
 }
 
-footer{
+footer {
     width: 100%;
-    height: 390px;
     background-color: #810C0C;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 100px;
-}
-
-.caja1-footer{
-    height: 150px;
-    width: 150px;
-    
-}
-
-#logo-footer{
-    position: relative;
-    max-height: 250px;
-}
-
-.metodos-pago{
-    width: 350px;
+    padding: 20px 0;
     color: white;
-    margin-right: 60%;
-    margin-left: 10%;
-    padding-top: 50px;
-    
 }
 
-.metodo{
-    display: inline-flex;
-    height: 40px;
-    width: 50px;
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 50px 20px;
+}
+
+
+.caja1-footer {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+#logo-footer {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Métodos de pago */
+.metodos-pago {
+    width: 100%; /* Ocupa todo el ancho */
+    text-align: center;
+    margin: 20px 0;
+}
+
+.metodo {
+    display: inline-block;
     margin: 5px;
 }
 
-.caja2-footer{
-    height: 150px;
-    width: 450px;
+.metodo img {
+    height: 40px;
+    width: auto;
 }
 
-.caja2-footer ul{
+/* Caja de enlaces */
+.caja2-footer {
+    width: 100%; /* Pantallas pequeñas */
+    text-align: center;
+}
+
+.caja2-footer ul {
     list-style-type: none;
-    color: white;
+    padding: 0;
 }
 
-.caja2-footer ul li{
-    padding-top: 25px;
+.caja2-footer ul li {
+    padding: 10px 0;
 }
 
 #derechos{
     text-align: center;
-    color: white;
 }
 
+/*Responsive del index*/
 @media (max-width: 768px) {
     header {
         position: relative;
@@ -224,11 +251,4 @@ footer{
         display: none;
     }
 
-    .content-carta{
-        border: solid;
-    }
-
-    .metodos-pago{
-        margin-left: 20%;
-    }
 }
