@@ -77,7 +77,10 @@ h2{
 
 }
 
-
+.carta{
+    border:solid;
+    width: 30%;
+}
 
 .carta img{
     width: 100%;
@@ -158,15 +161,23 @@ footer{
     background-color: #810C0C;
 }
 
+.footer-content{
+    display: flex;
+}
+
 .caja1-footer{
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
     border:solid;
 }
 
+#logo-footer{
+    width: 100%;
+}
+
 .caja2-footer{
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
     border:solid;
 }
 
