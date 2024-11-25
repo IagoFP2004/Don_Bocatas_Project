@@ -78,8 +78,7 @@ h2{
 }
 
 .carta{
-    border:solid;
-    width: 30%;
+    width: 90%;
 }
 
 .carta img{
@@ -196,7 +195,16 @@ footer{
 
 .caja2-footer{
     height: 150px;
-    width: 150px;
+    width: 450px;
+}
+
+.caja2-footer ul{
+    list-style-type: none;
+    color: white;
+}
+
+.caja2-footer ul li{
+    padding-top: 25px;
 }
 
 #derechos{
