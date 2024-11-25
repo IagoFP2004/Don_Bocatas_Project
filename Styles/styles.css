@@ -80,7 +80,8 @@ h2{
 }
 
 .table-menu{
-    padding: 60px;
+    padding: 20px 50px;
+    padding-right: 0;
 }
 
 .table-menu table {
@@ -246,9 +247,22 @@ footer {
     }
 
 
-    /* Ocultar menús */
+    
     header .menus {
         display: none;
     }
 
+    h2{
+        text-align: center;
+    }
+
+    .table-menu {
+        width: 90%; 
+        margin: 10px 0; 
+        padding-left: 7px;
+    }
+
+    .table-menu table {
+        width: 100%; 
+    }
 }
