@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservar</title>
-    <link rel="stylesheet" href="/Styles/styles.css">
     <link rel="stylesheet" href="/Styles/reservar.css">
+    <link rel="stylesheet" href="/Styles/styles.css">
 </head>
+
 <body>
-    <header>
-        <nav class="menu">
-            <div class="menus">
-                <ul>
-                    <a href="#">
-                        <li>SOBRE NOSOTROS</li>
-                    </a>
-                    <a href="#">
-                        <li>EVENTOS</li>
-                    </a>
-                    <a href="#">
-                        <li>CONTACTO</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="logo">
-                <a href="/index.html"><img src="/Img/DALL_E_1-removebg-preview.png" id="logo" alt="Imagen del logo de Don Bocatas" /></a>
-            </div>
-            <div class="menus">
-                <ul>
-                    <a href="#">
-                        <li>NUESTRO HORARIO</li>
-                    </a>
-                    <a href="/pages/reservar.html">
-                        <li>RESERVAR</li>
-                    </a>
-                    <a href="#">
-                        <li>LOGIN</li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div class="content">
+        <header>
+            <nav class="menu">
+                <div class="menus">
+                    <ul>
+                        <a href="#">
+                            <li>SOBRE NOSOTROS</li>
+                        </a>
+                        <a href="#">
+                            <li>EVENTOS</li>
+                        </a>
+                        <a href="#">
+                            <li>CONTACTO</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a href="/index.html"><img src="/Img/DALL_E_1-removebg-preview.png" id="logo" alt="Imagen del logo de Don Bocatas" /></a>
+                </div>
+                <div class="menus">
+                    <ul>
+                        <a href="#">
+                            <li>NUESTRO HORARIO</li>
+                        </a>
+                        <a href="">
+                            <li>RESERVAR</li>
+                        </a>
+                        <a href="#">
+                            <li>LOGIN</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <div class="main-content">
+                        <h2>HAZ TU RESERVA</h2>
+                        <p>Veamos cual de nuestros restaurantes está mas cerca de ti!</p>
+                        <div class="formulario-content">
+                            <div class="formulario">
+                                <form method="post" action="">
+                                    <input type="text" placeholder="Direccion"/>
+                                    <input type="text" placeholder="Fecha"/>
+                                    <select id="select1">
+                                        <option value="horario">Horario</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:00">13:15</option>
+                                        <option value="13:00">13:30</option>
+                                        <option value="13:00">13:45</option>
+                                        <option value="13:00">14:00</option>
+                                        <option value="13:00">14:15</option>
+                                        <option value="13:00">14:30</option>
+                                        <option value="13:00">14:45</option>
+                                        <option value="13:00">15:45</option>
+                                        <option value="13:00">15:15</option>
+                                        <option value="13:00">15:30</option>
+                                        <option value="13:00">15:45</option>
+                                        <option value="13:00">16:00</option>
+                                    </select>
+                                    <select id="select2">
+                                        <option value="personas">Personas</option>
+                                    </select>
+                                    <input type="button" value="Buscar Mesa" id="boton"/>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+    </div>
 </body>
+</body>
+
 </html>
