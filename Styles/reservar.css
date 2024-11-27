@@ -63,6 +63,12 @@ main{
     background-color: #810C0C;
 }
 
+#boton:hover{
+    scale: 1.3;
+    background-color: lightblue;
+    color: black;
+}
+
 @media (max-width: 950px) {
     header {
         position: relative;
