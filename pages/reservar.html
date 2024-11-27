@@ -38,7 +38,7 @@
                             <li>RESERVAR</li>
                         </a>
                         <a href="#">
-                            <li>LOGIN</li>
+                            <li style="color: orange;">LOGIN</li>
                         </a>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
                             <div class="formulario">
                                 <form method="post" action="">
                                     <input type="text" placeholder="Direccion"/>
-                                    <input type="text" placeholder="Fecha"/>
+                                    <input type="date"/>
                                     <select id="select1">
                                         <option value="horario">Horario</option>
                                         <option value="13:00">13:00</option>
@@ -73,8 +73,15 @@
                                     </select>
                                     <select id="select2">
                                         <option value="personas">Personas</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
                                     </select>
                                     <input type="button" value="Buscar Mesa" id="boton"/>
+                                    <p>Si desea poder recibir ofertas o personalizar su reserva pulse en <a href="#">INICIAR SESION</a></p>
                                 </form>
                             </div>
                         </div>
@@ -82,7 +89,32 @@
                 </article>
             </section>
         </main>
-        
+        <footer>
+            <div class="footer-content">
+                <div class="caja1-footer">
+                    <img src="/Img/DALL_E_1-removebg-preview.png" id="logo-footer" />
+
+                </div>
+                <div class="metodos-pago">
+                    <p>Metodos de pago:</p>
+                    <div class="metodo">
+                        <img src="/Img/mc_symbol.svg" alt="logo mastercard" />
+                    </div>
+                    <div class="metodo">
+                        <img src="/Img/visa-svgrepo-com.svg" alt="logo visa" />
+                    </div>
+
+                </div>
+                <div class="caja2-footer">
+                    <ul>
+                        <li>CONTACTANOS</li>
+                        <li>HACER UNA RESERVA</li>
+                        <li>NUESTRO HORARIO</li>
+                    </ul>
+                </div>
+            </div>
+            <p id="derechos">© Derechos reservaos</p>
+        </footer>
     </div>
 </body>
 </body>
