@@ -92,8 +92,9 @@ h2{
 }
 
 .table-menu{
-    padding: 20px 50px;
-    padding-right: 0;
+    display: flex;
+    padding: 20px;
+    margin-left: 50px;
 }
 
 .table-menu table {
@@ -283,15 +284,17 @@ footer {
     }
 
     .table-menu {
-        width: 90%; 
+        width: 70%; 
         margin: 10px 0; 
         padding-left: 2px;
-        padding-right: 10px;
+        
     }
 
     .table-menu table {
         width: 100%; 
     }
 
-    
+    #tabla1{
+        margin-left: 20px;
+    }
 }
