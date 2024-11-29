@@ -7,16 +7,16 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
-body{
-    background-color: #e6e9ec;
-}
 /*Estilos del index*/
 .content{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
+}
+
+body{
+    background-color: #e6e9ec;
 }
 
 header{
@@ -28,21 +28,15 @@ header{
     z-index: 1000;
 }
 
-header svg{
-    display: none;
-}
-
 #logo{
     position: relative;
-    padding-left: 25px;
     max-height: 250px;
-    padding-top: 10%;
+    padding-bottom: 30px;
 }
 
 header .menu{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     width: 100%;
 }
@@ -92,9 +86,8 @@ h2{
 }
 
 .table-menu{
-    display: flex;
-    padding: 20px;
-    margin-left: 50px;
+    padding: 20px 50px;
+    padding-right: 0;
 }
 
 .table-menu table {
@@ -172,20 +165,11 @@ h2{
     width: 100%;
 }
 
-
 #imagen1{
     height: 250px;
 }
 
-#imagen2{
-    height: 250px;
-}
-
 #imagen3{
-    height: 250px;
-}
-
-#imagen4{
     height: 250px;
 }
 
@@ -206,7 +190,6 @@ footer {
 }
 
 .footer-content {
-
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between; 
@@ -263,7 +246,7 @@ footer {
 }
 
 /*Responsive del index*/
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     header {
         position: relative;
         width: 100%;
@@ -275,26 +258,20 @@ footer {
         display: none;
     }
 
-    header svg{
-        display: inline;
-    }
-
     h2{
         text-align: center;
     }
 
     .table-menu {
-        width: 70%; 
+        width: 90%; 
         margin: 10px 0; 
         padding-left: 2px;
-        
+        padding-right: 10px;
     }
 
     .table-menu table {
         width: 100%; 
     }
 
-    #tabla1{
-        margin-left: 20px;
-    }
+    
 }

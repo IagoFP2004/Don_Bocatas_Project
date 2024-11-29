@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../Styles/styles.css">
     <link rel="stylesheet" href="../Styles/register.css">
 </head>
+
 <body>
     <div class="content">
         <header>
@@ -57,13 +59,17 @@
                     <label for="email">Email:</label>
                     <input type="email" name="email">
                     <label for="alergias">Alergias</label>
-                    <select >
+                    <select>
+                        <option value="-">-</option>
                         <option value="celiaco">Celiaco</option>
-                        <option ></option>
+                        <option value="intolerancia a la lactosa">Intolerante a la lactosa</option>
+                        <option value="otro">Otro</option>
                     </select>
+                    <textarea placeholder="Si su respuesta ha sido otros indique cual(es)"></textarea>
                 </div>
             </div>
         </main>
     </div>
 </body>
+
 </html>

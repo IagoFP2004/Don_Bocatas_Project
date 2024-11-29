@@ -8,15 +8,46 @@ main{
 .main-content{
     display: flex;
     justify-content: center;
-    width: 70%;
-    height: 500px;
+    width: 50%;
+    height: 600px;
     border: solid;
+    border-radius: 32px;
+    background-color: white;
 }
 
 .formulario{
     text-align: center;
     display: flex;
     flex-direction: column;
-    border: solid;
     width: 80%;
+    padding: 50px 25px;
 }
+
+.formulario input{
+    background-color: #e6e9ec;
+    padding: 10px;
+    border-radius: 32px;
+    border: solid;
+}
+
+.formulario label{
+   padding: 15px 0;
+}
+
+.formulario select{
+    padding: 5px 0;
+    border: solid;
+    border-radius: 32px;
+    background-color: #e6e9ec;
+
+}
+
+.formulario textarea{
+    border: solid;
+    height: 100px;
+    margin-top: 15px;
+    background-color: #e6e9ec;
+    padding: 25px;
+}
+
+
