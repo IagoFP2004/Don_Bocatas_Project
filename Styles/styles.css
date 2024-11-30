@@ -19,47 +19,68 @@ body{
     background-color: #e6e9ec;
 }
 
-header{
+header {
     position: fixed;
-    display: flex;
-    width: 100%;
-    height: 20%;
+    height: 10%;
     background-color: #810C0C;
+    width: 100%;
     z-index: 1000;
 }
 
-#logo{
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
-    max-height: 250px;
-    padding-bottom: 30px;
+    align-items: center;
+    padding: 0 50px;
 }
 
-header .menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.menus {
     width: 100%;
-}
-
-header .menus{
+    background-color: orange;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    width: 30%;
+    align-items: center;
+    transition: height 0.3s ease-in-out; /* Animación suave */
 }
 
-header .menus ul{
-    display: flex;
-    flex-direction: row;
+/* Cuando el checkbox está marcado, el menú se expande */
+.menuH:checked + label + .menus {
+    height: calc(100vh - 20%); /* El menú se expande al 100% de la altura */
+}
+
+header img {
+    width: 100px;
+}
+
+header ul {
     list-style-type: none;
 }
 
-header .menus ul a{
-    display: flex;
-    position: relative;
-    padding: 20% 25px;
-    color: white;
+header ul a {
     text-decoration: none;
+    color: white;
 }
+
+header input {
+    opacity: 0; /* Hace el checkbox invisible */
+    position: absolute; /* Lo saca del flujo visual */
+    width: 1px;
+    height: 1px;
+}
+
+header label {
+    font-size: 30px; /* Tamaño del icono de menú */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+}
+
 
 main{
     width: 100%;
@@ -120,6 +141,7 @@ h2{
 .table-menu tr:nth-child(odd) {
     background-color: #ffffff; /* Fondo blanco en filas impares */
 }
+
 
 .boton-reservar{
     height: 70px;
@@ -253,11 +275,6 @@ footer {
     }
 
 
-    
-    header .menus {
-        display: none;
-    }
-
     h2{
         text-align: center;
     }
@@ -271,6 +288,11 @@ footer {
 
     .table-menu table {
         width: 100%; 
+    }
+
+    #tabla1{
+        position: relative;
+        margin: 0 10px;
     }
 
     
