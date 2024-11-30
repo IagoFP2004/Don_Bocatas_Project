@@ -21,7 +21,7 @@ body{
 
 header {
     position: fixed;
-    height: 20%;
+    height: 15%;
     background-color: #810C0C;
     width: 100%;
     z-index: 1000;
@@ -39,9 +39,9 @@ header {
 
 .menus {
     width: 100%;
-    background-color: orange;
+    background-color: black;
     position: absolute;
-    top: 180px;
+    top: 130px;
     left: 0;
     height: 0;
     overflow: hidden;
@@ -50,6 +50,7 @@ header {
     align-items: center;
     transition: height 0.3s ease-in-out; /* Animación suave */
 }
+
 
 /* Cuando el checkbox está marcado, el menú se expande */
 .menuH:checked + label + .menus {
@@ -81,6 +82,10 @@ header label {
     cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
 }
 
+.menus ul a li{
+    font-size: xx-large;
+    margin: 120px 0;
+}
 
 main{
     width: 100%;
@@ -150,6 +155,11 @@ h2{
     margin: 0px auto;
     margin-bottom: 40px;
     background-color: #00C8FF;
+}
+
+.boton-reservar a{
+    text-decoration: none;
+    color: black;
 }
 
 #texto-boton{

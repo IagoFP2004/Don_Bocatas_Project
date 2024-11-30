@@ -94,7 +94,7 @@ aside img{
 @media (max-width: 950px) {
     main {
         width: 90%; 
-        margin: 5% auto;
+        margin: 10% auto;
     }
 
     .content {
