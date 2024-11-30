@@ -21,7 +21,7 @@ body{
 
 header {
     position: fixed;
-    height: 10%;
+    height: 20%;
     background-color: #810C0C;
     width: 100%;
     z-index: 1000;
@@ -41,7 +41,7 @@ header {
     width: 100%;
     background-color: orange;
     position: absolute;
-    top: 80px;
+    top: 180px;
     left: 0;
     height: 0;
     overflow: hidden;
@@ -57,7 +57,7 @@ header {
 }
 
 header img {
-    width: 100px;
+    width: 150px;
 }
 
 header ul {
@@ -272,6 +272,10 @@ footer {
     header {
         position: relative;
         width: 100%;
+    }
+
+    .menus{
+        top: 130px;
     }
 
 
