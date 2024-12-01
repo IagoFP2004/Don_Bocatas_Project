@@ -44,6 +44,10 @@ main{
     background-color: #e6e9ec;
 }
 
+.formulario a{
+    color: orangered;
+}
+
 #boton{
     width: 30%;
     border-radius: 32px;

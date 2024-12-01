@@ -98,10 +98,25 @@ main section article .welcome video{
     height: auto;
 }
 
+h1{
+    text-align: center;
+}
+
 h2{
     margin-top: 20px;
     margin-left: 30px;
 }
+
+main #texto{
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+#texto a{
+    color: orangered;
+}
+
+
 
 .content-carta {
     width: 100%;
