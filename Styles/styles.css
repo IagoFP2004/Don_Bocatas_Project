@@ -76,7 +76,6 @@ header ul a:hover {
     color: orange;
 }
 
-
 header input {
     opacity: 0; /* Hace el checkbox invisible */
     position: absolute; /* Lo saca del flujo visual */
