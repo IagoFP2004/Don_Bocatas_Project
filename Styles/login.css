@@ -10,13 +10,21 @@ main{
 .login-card{
     margin: 2% 0;
     border: solid;
-    width: 40%;
+    width: 50%;
     height: 400px;
     display: flex;
     border-radius: 13px;
     justify-content: center;
     background-color: white;
     box-shadow: 0 0 25px black;
+    overflow: hidden;
+}
+
+.login-card img{
+    width: 100%;
+    height: auto;
+    
+
 }
 
 .formulario-content{
@@ -35,7 +43,7 @@ main{
 }
 
 .formulario input{
-    width: 60%;
+    width: 80%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 35px;
@@ -49,7 +57,7 @@ main{
 }
 
 #boton{
-    width: 30%;
+    width: 40%;
     border-radius: 32px;
     font-size: 20px;
     color: white;
@@ -63,19 +71,36 @@ main{
     transition: 0.5s;
 }
 
-@media (max-width: 950px) {
+
+@media (max-width: 1500px) {
 
     main{
         margin-top: 50px;
     }
     
-    .login-card{
-        width: 70%;
-        height: 420px;
+    .login-card {
         text-align: center;
+        margin: 10% auto;                          
+        width: 70%;                       
+        max-width: 400px;               
+        height: auto;                     
+        min-height: 400px;                
+        display: flex;
+        flex-direction: column;           
+        align-items: center;             
+        border-radius: 13px;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 15px);  
+        overflow: hidden;        
     }
 
     #boton{
-        width: 50%;
+        width: 60%;
     }
+
+   .login-card p{
+        margin-bottom: 20px;
+    }
+    
 }

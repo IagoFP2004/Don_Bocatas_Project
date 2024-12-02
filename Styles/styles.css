@@ -76,6 +76,7 @@ header ul a:hover {
     color: orange;
 }
 
+
 header input {
     opacity: 0; /* Hace el checkbox invisible */
     position: absolute; /* Lo saca del flujo visual */
@@ -102,6 +103,10 @@ main{
 main section article .welcome video{
     width: 100%;
     height: auto;
+}
+
+h2::first-letter{
+    font-size: xx-large;
 }
 
 h1{
@@ -191,6 +196,8 @@ main #texto{
     text-decoration: none;
     color: white;
 }
+
+
 
 #texto-boton{
     text-align: center;
