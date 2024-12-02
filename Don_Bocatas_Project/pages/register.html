@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/register.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <a href="../index.html"><img src="../Img/DALL_E_1-removebg-preview.png" id="logo" alt="Imagen del logo de Don Bocatas" /></a>
+            </div>
+            <input type="checkbox" class="menuH" id="menu-toggle" /> <!-- Input checkbox -->
+            <label for="menu-toggle"> <!-- Icono de menú -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <div class="menus">
+                <ul>
+                    <a href="#">
+                        <li>NUESTRO HORARIO</li>
+                    </a>
+                    <a href="../pages/reservar.html">
+                        <li>RESERVAR</li>
+                    </a>
+                    <a href="../pages/login.html">
+                        <li>INICIAR SESION</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+
+        <main>
+            <div class="main-content">
+                <div class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+                    <label for="alergias">Alergias</label>
+                    <select>
+                        <option value="-">-</option>
+                        <option value="celiaco">Celiaco</option>
+                        <option value="intolerancia a la lactosa">Intolerante a la lactosa</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <textarea placeholder="Si su respuesta ha sido otros indique cual(es)"></textarea>
+                    <input type="submit" value="Crear cuenta" id="boton" />
+                </div>
+            </div>
+        </main>
+        <aside>
+            <h3>INFORMACION QUE PUEDE SER UTIL</h3>
+            <img src="../Img/unnamed.jpg" />
+        </aside>
+        <footer>
+            <div class="footer-content">
+                <div class="caja1-footer">
+                    <img src="../Img/DALL_E_1-removebg-preview.png" id="logo-footer" />
+
+                </div>
+                <div class="metodos-pago">
+                    <p>Metodos de pago:</p>
+                    <div class="metodo">
+                        <img src="../Img/mc_symbol.svg" alt="logo mastercard" />
+                    </div>
+                    <div class="metodo">
+                        <img src="../Img/visa-svgrepo-com.svg" alt="logo visa" />
+                    </div>
+
+                </div>
+                <div class="caja2-footer">
+                    <ul>
+                        <li>CONTACTANOS</li>
+                        <li>HACER UNA RESERVA</li>
+                        <li>NUESTRO HORARIO</li>
+                    </ul>
+                </div>
+            </div>
+            <p id="derechos">© Derechos reservaos</p>
+        </footer>
+    </div>
+</body>
+
+</html>
