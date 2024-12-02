@@ -6,6 +6,7 @@
     -moz-box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    max-width: 100%;
 }
 /*Estilos del index*/
 .content{
@@ -39,6 +40,7 @@ header {
 
 .menus {
     width: 100%;
+    overflow-x: hidden;
     background-color: black;
     position: absolute;
     top: 130px;
@@ -70,6 +72,10 @@ header ul a {
     color: white;
 }
 
+header ul a:hover {
+    color: orange;
+}
+
 header input {
     opacity: 0; /* Hace el checkbox invisible */
     position: absolute; /* Lo saca del flujo visual */
@@ -84,11 +90,11 @@ header label {
 
 .menus ul a li{
     font-size: xx-large;
-    margin: 120px 0;
+    margin: 80px 0;
 }
 
 main{
-    width: 100%;
+    max-width: 100%;
     height: 80%;
 }
 
@@ -99,6 +105,7 @@ main section article .welcome video{
 }
 
 h1{
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -124,6 +131,7 @@ main #texto{
     flex-wrap: wrap; 
     margin-top: 20px;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .table-menu{
@@ -133,6 +141,7 @@ main #texto{
 
 .table-menu table {
     width: 100%; 
+    max-width: 100%; 
     border: 2px solid black; 
     border-collapse: collapse;
     text-align: left; 
@@ -169,12 +178,18 @@ main #texto{
     border: solid;
     margin: 0px auto;
     margin-bottom: 40px;
-    background-color: #00C8FF;
+    background-color: #810C0C;
+}
+
+.boton-reservar:hover{
+    scale: 1.3;
+    background-color: darkgreen;
+    transition: 0.5s;
 }
 
 .boton-reservar a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #texto-boton{
@@ -182,9 +197,11 @@ main #texto{
     padding-top: 25px;
 }
 
-#texto-boton:hover{
-    color: white;
+#texto{
+    text-align: center;
 }
+
+
 
 .content-comentarios{
     display: flex;
@@ -196,7 +213,10 @@ main #texto{
 .comentario{
     height: 400px;
     width: 300px;
-    border: solid;
+   
+    border-radius: 32px;
+    box-shadow: 0px 0px 15px black;
+    overflow: hidden;
     background-color: #D9D9D9;
     margin-top: 20px;
     margin-left: 10px;
@@ -216,7 +236,15 @@ main #texto{
     height: 250px;
 }
 
+#imagen2{
+    height: 250px;
+}
+
 #imagen3{
+    height: 250px;
+}
+
+#imagen4{
     height: 250px;
 }
 
@@ -323,6 +351,8 @@ footer {
         position: relative;
         margin: 0 10px;
     }
+
+    
 
     
 }
