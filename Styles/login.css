@@ -74,6 +74,10 @@ main{
 
 @media (max-width: 1500px) {
 
+    header{
+        height: 10%;
+    }
+
     main{
         margin-top: 50px;
     }

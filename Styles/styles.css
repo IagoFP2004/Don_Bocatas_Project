@@ -22,7 +22,7 @@ body{
 
 header {
     position: fixed;
-    height: 15%;
+    height: 12%;
     background-color: #810C0C;
     width: 100%;
     z-index: 1000;
@@ -43,7 +43,7 @@ header {
     overflow-x: hidden;
     background-color: black;
     position: absolute;
-    top: 130px;
+    top: 110px;
     left: 0;
     height: 0;
     overflow: hidden;
