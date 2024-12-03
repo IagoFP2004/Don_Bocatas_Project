@@ -67,12 +67,17 @@ header ul {
     list-style-type: none;
 }
 
-header ul a {
+header ul li a {
     text-decoration: none;
     color: white;
+    font-size: xx-large;
 }
 
-header ul a:hover {
+header ul li{
+    margin: 80px auto;
+}
+
+header ul li a:hover {
     color: orange;
 }
 
@@ -88,14 +93,9 @@ header label {
     cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
 }
 
-.menus ul a li{
-    font-size: xx-large;
-    margin: 80px 0;
-}
-
-main{
-    max-width: 100%;
-    height: 80%;
+main {
+    width: 100%;
+    padding: 20px 0px;
 }
 
 
