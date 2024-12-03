@@ -4,7 +4,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial,  sans-serif;
     box-sizing: border-box;
     max-width: 100%;
 }
@@ -78,7 +78,7 @@ header ul li{
 }
 
 header ul li a:hover {
-    color: orange;
+    color: #ffa600;
 }
 
 header input {
@@ -95,7 +95,6 @@ header label {
 
 main {
     width: 100%;
-    padding: 20px 0px;
 }
 
 
@@ -124,7 +123,7 @@ main #texto{
 }
 
 #texto a{
-    color: orangered;
+    color: #ff4500;
 }
 
 
@@ -172,7 +171,7 @@ main #texto{
 }
 
 .table-menu tr:nth-child(odd) {
-    background-color: #ffffff; /* Fondo blanco en filas impares */
+    background-color: white; /* Fondo blanco en filas impares */
 }
 
 
@@ -187,7 +186,7 @@ main #texto{
 
 .boton-reservar:hover{
     scale: 1.3;
-    background-color: darkgreen;
+    background-color: #006400;
     transition: 0.5s;
 }
 
@@ -321,6 +320,7 @@ footer {
 .caja2-footer ul li {
     padding: 10px 0;
 }
+
 
 #derechos{
     text-align: center;
